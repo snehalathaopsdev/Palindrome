@@ -8,7 +8,7 @@ public class PalindromeChecker {
     }
     public static void main(String[] args) {
         PalindromeChecker checker = new PalindromeChecker();
-        String word = "madam";
+        String word = args.length > 0 ? args[0] : "madam";
         System.out.println("Is '" + word + "' a palindrome? " + checker.isPalindrome(word));
     }
 }
